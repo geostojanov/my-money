@@ -3,7 +3,7 @@ import { projectAuth } from "../firebase/config"
 
 export const useSignup = () => {
   const [error, setError] = useState(null)
-  const [pending, setIsPending] = useState(false)
+  const [isPending, setIsPending] = useState(false)
   
   const signup = async (email, password, displayName) => {
     setError(null)
