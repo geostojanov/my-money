@@ -39,11 +39,11 @@ export const useSignup = () => {
       }
     }
     
-    useEffect(() => {
-      return () => setIsCancelled(true)
-    }, [])
-    
   }
+  
+  useEffect(() => {
+    return () => setIsCancelled(true)
+  }, [])
   
   return { error, isPending, signup }
 }
